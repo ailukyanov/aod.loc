@@ -677,6 +677,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------------------ </GENERATION> -----------------------------*/
 /*------------------------------ <BRANDS> -----------------------------*/
+.brands_rev .brands__column {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+     -moz-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+  .brands_rev .brands__column_b {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+       -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+
 .brands__row {
   display: -webkit-box;
   display: -webkit-flex;
