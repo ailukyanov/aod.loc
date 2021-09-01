@@ -11,6 +11,7 @@
 
 /*------------------------------ <COMPONENTS> ------------------------------*/
 @import "components/ibg";
+@import "components/block";
 /*------------------------------ </COMPONENTS> -----------------------------*/
 
 /*------------------------------ <MODULES> ------------------------------*/
@@ -18,5 +19,6 @@
 @import "modules/header";
 @import "modules/main-screen";
 @import "modules/content";
+@import "modules/generation";
 @import "modules/footer";
 /*------------------------------ </MODULES> -----------------------------*/
