@@ -1,0 +1,86 @@
+/*------------------------------ <RESET, COMMON PARAMETERS> ------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover, &:visited {
+    text-decoration: none;
+  }
+
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+aside, nav, footer, header, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  min-width: $minwidth;
+}
+
+body {
+  font-family: $fontfamily;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input, button, textarea {
+  font-family: $fontfamily;
+}
+
+input {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+/*------------------------------ </RESET, COMMON PARAMETERS> -----------------------------*/
+
+/*------------------------------ <WRAPPER> ------------------------------*/
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+/*------------------------------ </WRAPPER> -----------------------------*/
+
+/*------------------------------ <MAIN GRID> ------------------------------*/
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+}
+/*------------------------------ </MAIN GRID> -----------------------------*/

@@ -1,0 +1,22 @@
+/*------------------------------ <HELPERS> ------------------------------*/
+@import "helpers/mixins";
+@import "helpers/variables";
+/*------------------------------ </HELPERS> -----------------------------*/
+
+/*------------------------------ <COMMON> ------------------------------*/
+@import "common/normalize";
+@import "common/fonts";
+@import "common/base";
+/*------------------------------ </COMMON> -----------------------------*/
+
+/*------------------------------ <COMPONENTS> ------------------------------*/
+@import "components/ibg";
+/*------------------------------ </COMPONENTS> -----------------------------*/
+
+/*------------------------------ <MODULES> ------------------------------*/
+@import "modules/page";
+@import "modules/header";
+@import "modules/main-screen";
+@import "modules/content";
+@import "modules/footer";
+/*------------------------------ </MODULES> -----------------------------*/
