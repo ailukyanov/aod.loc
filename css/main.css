@@ -996,76 +996,174 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------------------ </SHOP> --------------------------*/
 /*------------------------------ <SUBSCRIBE> --------------------------*/
-.subscribe {
-  padding: 110px 0; }
-  .subscribe__body {
-    max-width: 534px;
-    margin: 0 auto;
-    text-align: center; }
-  .subscribe__logo {
-    margin: 0 0 39px 0; }
-  .subscribe__label {
-    color: #848789;
-    font-size: 24px;
+.subscribe__body {
+  padding: 110px 0;
+  max-width: 534px;
+  margin: 0 auto;
+  text-align: center; }
+
+.subscribe__logo {
+  margin: 0 0 39px 0; }
+
+.subscribe__label {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  margin: 0 0 35px 0; }
+
+.subscribe__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0; }
+
+.subscribe__input {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 8px 0 0; }
+  .subscribe__input .input {
+    display: block;
+    width: 100%;
+    height: 69px;
+    border: 1px solid #d3d7d9;
+    background-color: #ffffff;
+    padding: 0 28px;
+    color: #929292;
+    font-size: 20px;
     font-style: italic;
-    margin: 0 0 35px 0; }
+    /*------------------------------ <For js> ------------------------------*/
+    /*------------------------------ </For js> -----------------------------*/ }
+    .subscribe__input .input.focus {
+      font-style: normal;
+      color: #333; }
+    .subscribe__input .input.err {
+      border: 1px solid red; }
+
+.subscribe__button {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 126px;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 126px;
+          flex: 0 0 126px; }
+
+.subscribe__btn {
+  width: 100%;
+  height: 69px;
+  line-height: 69px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #64c29e; }
+
+@media (max-width: 750px) {
+  .subscribe__body {
+    padding: 50px 0; } }
+
+@media (max-width: 500px) {
   .subscribe__form {
+    display: block; }
+  .subscribe__input {
+    padding: 0 0 8px 0; } }
+
+/*------------------------------ </SUBSCRIBE> --------------------------*/
+/*------------------------------ <FOOTER> ------------------------------*/
+.footer {
+  background-color: #f7f7f7;
+  padding: 100px 0; }
+  .footer__row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 0; }
-  .subscribe__input {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-       -moz-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    padding: 0 8px 0 0; }
-    .subscribe__input .input {
-      display: block;
-      width: 100%;
-      height: 69px;
-      border: 1px solid #d3d7d9;
-      background-color: #ffffff;
-      padding: 0 28px;
-      color: #929292;
-      font-size: 20px;
-      font-style: italic;
-      /*------------------------------ <For js> ------------------------------*/
-      /*------------------------------ </For js> -----------------------------*/ }
-      .subscribe__input .input.focus {
-        font-style: normal;
-        color: #333; }
-      .subscribe__input .input.err {
-        border: 1px solid red; }
-  .subscribe__button {
+    font-size: 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__column {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 126px;
+    -webkit-flex: 0 1 33.333%;
        -moz-box-flex: 0;
-        -ms-flex: 0 0 126px;
-            flex: 0 0 126px; }
-  .subscribe__btn {
-    width: 100%;
-    height: 69px;
-    line-height: 69px;
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 300;
-    background-color: #64c29e; }
-  @media (max-width: 750px) {
-    .subscribe__body {
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%; }
+  .footer__address {
+    padding: 0 20px 0 0;
+    color: #848789;
+    font-size: 14px;
+    line-height: 18px; }
+    .footer__address p:first-child {
+      font-weight: 700; }
+  @media (max-width: 1100px) {
+    .footer {
       padding: 50px 0; } }
-  @media (max-width: 500px) {
-    .subscribe__form {
-      display: block; }
-    .subscribe__input {
-      padding: 0 0 8px 0; } }
+  @media (max-width: 600px) {
+    .footer {
+      padding: 30px 0; }
+      .footer__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+           -moz-box-orient: vertical;
+           -moz-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center; }
+      .footer__address {
+        padding: 0; }
+      .footer__social {
+        margin: 15px 0; } }
 
-/*------------------------------ </SUBSCRIBE> --------------------------*/
-/*------------------------------ <FOOTER> ------------------------------*/
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .social__link {
+    margin: 0 7.5px; }
+
+.dev {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .dev__text {
+    color: #848789;
+    font-size: 14px;
+    font-style: italic;
+    padding: 0 9px 0 0; }
+
 /*------------------------------ </FOOTER> -----------------------------*/
 /*------------------------------ </MODULES> -----------------------------*/
 
